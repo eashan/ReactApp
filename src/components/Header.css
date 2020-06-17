@@ -1,0 +1,50 @@
+.Header{
+    position: absolute;
+    width: 100%;
+    padding: 50px 0;
+    z-index: 100;
+}
+
+.HeaderGroup{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.Header a{
+    font-style: normal;
+    font-weight: 700;    
+    color: #FFFFFF;
+}
+
+.Header button{
+    padding: 8px 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    background: #56ccf2;
+    border-radius: 10px;
+    outline : none;
+    cursor: pointer;
+
+}
+
+@media(max-width:500px){
+    .Header{
+        padding: 15px 0px;
+    }
+    .HeaderGroup{
+        grid-template-columns: repeat(4,auto);
+    }
+    .Header a:nth-child(4){
+        display: none;
+    }
+    .Header a:nth-child(5){
+        display: none;
+    }
+
+}
